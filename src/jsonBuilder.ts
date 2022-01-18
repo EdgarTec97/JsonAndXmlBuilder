@@ -1,5 +1,5 @@
 import object from "./object2";
-
+import * as _ from "lodash";
 const objectC: any = object;
 const keys = Object.keys(object);
 
@@ -29,22 +29,8 @@ keys.forEach((key, index) => {
 template += "]";
 const array: any[] = JSON.parse(template);
 let combined = {};
-// array.forEach((element) => {
-//   objCombine(element, combined);
-// });
-objCombine(array[0], combined);
-objCombine(array[1], combined);
-objCombine(array[2], combined);
-objCombine(array[3], combined);
-objCombine(array[4], combined);
-console.log(JSON.stringify(combined, null, 1));
+array.forEach((element) => {
+  combined = _.merge(element, combined);
+});
 
-function objCombine(obj: any, variable: any) {
-  for (let key of Object.keys(obj)) {
-    if (!variable[key]) variable[key] = {};
-
-    for (let innerKey of Object.keys(obj[key])) {
-      variable[key][innerKey] = obj[key][innerKey];
-    }
-  }
-}
+export default combined;

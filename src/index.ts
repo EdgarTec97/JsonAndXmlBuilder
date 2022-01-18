@@ -1,7 +1,7 @@
 import * as builder from "xmlbuilder";
 
-import object from "./object";
+import combined from "./jsonBuilder";
 
-var xml = builder.create(object.LABEL_NUMBER.template2).end({ pretty: true });
+var xml = builder.create(combined).end({ pretty: true });
 
 console.log(xml);
