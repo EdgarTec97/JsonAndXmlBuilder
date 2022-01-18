@@ -1,18 +1,7 @@
 import * as builder from "xmlbuilder";
 
-var obj = {
-  "soap:Envelope": {
-    "@xmlns:soap": "http://www.w3.org/2003/05/soap-envelope",
-    "@xmlns:tem": "http://tempuri.org/",
-    "soap:Header": {
-      "tem:AuthHeader": {
-        "tem:login": {
-          "#text": "{{carrier.id}}",
-        },
-      },
-    },
-  },
-};
+import object from "./object";
 
-var xml = builder.create(obj).end({ pretty: true });
+var xml = builder.create(object.LABEL_NUMBER.template2).end({ pretty: true });
+
 console.log(xml);

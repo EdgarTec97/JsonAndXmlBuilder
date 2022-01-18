@@ -36,364 +36,244 @@ export default {
                     "tem:Des_DireccionRemitente": {
                       "#text": "{{shipper.address1}}",
                     },
-                    Num_TelefonoRemitente: {
+                    "tem:Num_TelefonoRemitente": {
                       "#text": "{{shipper.phoneNumber}}",
                     },
-                    Nom_Remitente: {
-                      label: "shipper.personName",
-                      require: true,
+                    "tem:Nom_Remitente": {
                       "#text": "{{shipper.personName}}",
                     },
-                    Des_Telefono: {
-                      label: "recipient.phoneNumber",
-                      require: true,
+                    "tem:Des_Telefono": {
                       "#text": "{{recipient.phoneNumber}}",
                     },
-                    Des_Ciudad: {
-                      label: "recipient.city",
-                      require: true,
+                    "tem:Des_Ciudad": {
                       "#text": "{{recipient.city}}",
                     },
-                    Des_Direccion: {
-                      label: "recipient.address1",
-                      require: true,
+                    "tem:Des_Direccion": {
                       "#text": "{{recipient.address1}}",
                     },
-                    Nom_Contacto: {
-                      label: "recipient.personName",
-                      require: true,
+                    "tem:Nom_Contacto": {
                       "#text": "{{recipient.personName}}",
                     },
-                    Des_CorreoElectronico: {
-                      label: "recipient.email",
-                      require: false,
+                    "tem:Des_CorreoElectronico": {
                       "#text": "{{recipient.email}}",
                     },
-                    Num_Guia: {
-                      label: "extraParams.servientrega.numGuia",
-                      require: false,
+                    "tem:Num_Guia": {
                       "#text": "{{safeVal extraParams.servientrega.numGuia 0}}",
                     },
-                    Num_Sobreporte: {
-                      label: "extraParams.servientrega.numSobreporte",
-                      require: false,
+                    "tem:Num_Sobreporte": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numSobreporte 0}}",
                     },
-                    Num_SobreCajaPorte: {
-                      label: "extraParams.servientrega.numSobreCajaPorte",
-                      require: false,
+                    "tem:Num_SobreCajaPorte": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numSobreCajaPorte 0}}",
                     },
-                    Fec_TiempoEntrega: {
-                      label: "extraParams.servientrega.fecTiempoEntrega",
-                      require: true,
+                    "tem:Fec_TiempoEntrega": {
                       "#text":
                         "{{safeVal extraParams.servientrega.fecTiempoEntrega 1}}",
                     },
-                    Des_TipoTrayecto: {
-                      label: "extraParams.servientrega.desTipoTrayecto",
-                      require: true,
+                    "tem:Des_TipoTrayecto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desTipoTrayecto 1}}",
                     },
-                    Ide_CodFacturacion: {
-                      label: "extraParams.servientrega.ideCodFacturacion",
-                      require: true,
+                    "tem:Ide_CodFacturacion": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideCodFacturacion 'SER408'}}",
                     },
-                    Num_Piezas: {
-                      label: "extraParams.servientrega.numPiezas",
-                      require: true,
+                    "tem:Num_Piezas": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numPiezas 1}}",
                     },
-                    Des_FormaPago: {
-                      label: "extraParams.servientrega.formaPago",
-                      require: true,
+                    "tem:Des_FormaPago": {
                       "#text":
                         "{{safeVal extraParams.servientrega.formaPago 2}}",
                     },
-                    Des_MedioTransporte: {
-                      label: "extraParams.servientrega.medioTransporte",
-                      require: true,
+                    "tem:Des_MedioTransporte": {
                       "#text":
                         "{{safeVal extraParams.servientrega.medioTransporte 1}}",
                     },
-                    Des_TipoDuracionTrayecto: {
-                      label: "extraParams.servientrega.tipoDuracionTrayecto",
-                      require: true,
+                    "tem:Des_TipoDuracionTrayecto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.tipoDuracionTrayecto 1}}",
                     },
-                    Nom_TipoTrayecto: {
-                      label: "extraParams.servientrega.tipoTrayecto",
-                      require: true,
+                    "tem:Nom_TipoTrayecto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.tipoTrayecto 1}}",
                     },
-                    Num_Alto: {
-                      label: "extraParams.servientrega.numAlto",
-                      require: true,
+                    "tem:Num_Alto": {
                       "#text": "{{safeVal extraParams.servientrega.numAlto 1}}",
                     },
-                    Num_Ancho: {
-                      label: "extraParams.servientrega.numAncho",
-                      require: true,
+                    "tem:Num_Ancho": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numAncho 1}}",
                     },
-                    Num_Largo: {
-                      label: "extraParams.servientrega.numLargo",
-                      require: true,
+                    "tem:Num_Largo": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numLargo 1}}",
                     },
-                    Num_PesoTotal: {
-                      label: "extraParams.servientrega.numPesoTotal",
-                      require: true,
+                    "tem:Num_PesoTotal": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numPesoTotal 1}}",
                     },
-                    Des_UnidadLongitud: {
-                      label: "extraParams.servientrega.desUnidadLongitud",
-                      require: true,
+                    "tem:Des_UnidadLongitud": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desUnidadLongitud 'cm'}}",
                     },
-                    Des_UnidadPeso: {
-                      label: "extraParams.servientrega.desUnidadPeso",
-                      require: true,
+                    "tem:Des_UnidadPeso": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desUnidadPeso 'kg'}}",
                     },
-                    Nom_UnidadEmpaque: {
-                      label: "extraParams.servientrega.nomUnidadEmpaque",
-                      require: true,
+                    "tem:Nom_UnidadEmpaque": {
                       "#text":
                         "{{safeVal extraParams.servientrega.nomUnidadEmpaque 'GENERICO'}}",
                     },
-                    Gen_Cajaporte: {
-                      label: "extraParams.servientrega.genCajaporte",
-                      require: false,
+                    "tem:Gen_Cajaporte": {
                       "#text":
                         "{{safeVal extraParams.servientrega.genCajaporte false}}",
                     },
-                    Gen_Sobreporte: {
-                      label: "extraParams.servientrega.genSobreporte",
-                      require: true,
+                    "tem:Gen_Sobreporte": {
                       "#text":
                         "{{safeVal extraParams.servientrega.genSobreporte false}}",
                     },
-                    Des_DiceContenerSobre: {
-                      label: "extraParams.servientrega.desDiceContenerSobre",
-                      require: true,
+                    "tem:Des_DiceContenerSobre": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desDiceContenerSobre '?'}}",
                     },
-                    Doc_Relacionado: {
-                      label: "extraParams.servientrega.docRelacionado",
-                      require: false,
+                    "tem:Doc_Relacionado": {
                       "#text":
                         "{{safeVal extraParams.servientrega.docRelacionado 'Valor10'}}",
                     },
-                    Des_VlrCampoPersonalizado1: {
-                      label:
-                        "extraParams.servientrega.desVlrCampoPersonalizado1",
-                      require: false,
+                    "tem:Des_VlrCampoPersonalizado1": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desVlrCampoPersonalizado1 'Novedades 3166913218'}}",
                     },
-                    Ide_Num_Referencia_Dest: {
-                      label: "extraParams.servientrega.ideNumReferenciaDest",
-                      require: true,
+                    "tem:Ide_Num_Referencia_Dest": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideNumReferenciaDest 'Valor12'}}",
                     },
-                    Num_Factura: {
-                      label: "extraParams.servientrega.numFactura",
-                      require: false,
+                    "tem:Num_Factura": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numFactura 'valor13'}}",
                     },
-                    Ide_Producto: {
-                      label: "extraParams.servientrega.ideProducto",
-                      require: true,
+                    "tem:Ide_Producto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideProducto 2}}",
                     },
-                    Num_Recaudo: {
-                      label: "extraParams.servientrega.numRecaudo",
-                      require: false,
+                    "tem:Num_Recaudo": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numRecaudo 0}}",
                     },
-                    Ide_Destinatarios: {
-                      label: "extraParams.servientrega.ideDestinatarios",
-                      require: true,
+                    "tem:Ide_Destinatarios": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideDestinatarios '00000000-0000-0000-0000-000000000000'}}",
                     },
-                    Ide_Manifiesto: {
-                      label: "extraParams.servientrega.ideManifiesto",
-                      require: true,
+                    "tem:Ide_Manifiesto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideManifiesto '00000000-0000-0000-0000-000000000000'}}",
                     },
-                    Num_BolsaSeguridad: {
-                      label: "extraParams.servientrega.numBolsaSeguridad",
-                      require: true,
+                    "tem:Num_BolsaSeguridad": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numBolsaSeguridad 0}}",
                     },
-                    Num_Precinto: {
-                      label: "extraParams.servientrega.numPrecinto",
-                      require: false,
+                    "tem:Num_Precinto": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numPrecinto 0}}",
                     },
-                    Num_VolumenTotal: {
-                      label: "extraParams.servientrega.numVolumenTotal",
-                      require: true,
+                    "tem:Num_VolumenTotal": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numVolumenTotal 0}}",
                     },
-                    Des_DireccionRecogida: {
-                      label: "extraParams.servientrega.desDireccionRecogida",
-                      require: true,
+                    "tem:Des_DireccionRecogida": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desDireccionRecogida '?'}}",
                     },
-                    Des_TelefonoRecogida: {
-                      label: "extraParams.servientrega.desTelefonoRecogida",
-                      require: true,
+                    "tem:Des_TelefonoRecogida": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desTelefonoRecogida '?'}}",
                     },
-                    Des_CiudadRecogida: {
-                      label: "extraParams.servientrega.desCiudadRecogida",
-                      require: true,
+                    "tem:Des_CiudadRecogida": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desCiudadRecogida '?'}}",
                     },
-                    Num_PesoFacturado: {
-                      label: "extraParams.servientrega.numPesoFacturado",
-                      require: false,
+                    "tem:Num_PesoFacturado": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numPesoFacturado 0}}",
                     },
-                    Des_TipoGuia: {
-                      label: "extraParams.servientrega.desTipoGuia",
-                      require: true,
+                    "tem:Des_TipoGuia": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desTipoGuia 2}}",
                     },
-                    Id_ArchivoCargar: {
-                      label: "extraParams.servientrega.idArchivoCargar",
-                      require: true,
+                    "tem:Id_ArchivoCargar": {
                       "#text":
                         "{{safeVal extraParams.servientrega.idArchivoCargar 'hc3DC+KSn8oRLa+25qt/5w=='}}",
                     },
-                    Des_CiudadOrigen: {
-                      label: "extraParams.servientrega.desCiudadOrigen",
-                      require: true,
+                    "tem:Des_CiudadOrigen": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desCiudadOrigen 0}}",
                     },
-                    Num_ValorDeclaradoTotal: {
-                      label: "extraParams.servientrega.numValorDeclaradoTotal",
-                      require: true,
+                    "tem:Num_ValorDeclaradoTotal": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numValorDeclaradoTotal 5000}}",
                     },
-                    Num_ValorLiquidado: {
-                      label: "extraParams.servientrega.numValorLiquidado",
-                      require: true,
+                    "tem:Num_ValorLiquidado": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numValorLiquidado 0}}",
                     },
-                    Num_VlrSobreflete: {
-                      label: "extraParams.servientrega.numVlrSobreflete",
-                      require: false,
+                    "tem:Num_VlrSobreflete": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numVlrSobreflete 0}}",
                     },
-                    Num_VlrFlete: {
-                      label: "extraParams.servientrega.numVlrFlete",
-                      require: false,
+                    "tem:Num_VlrFlete": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numVlrFlete 0}}",
                     },
-                    Num_Descuento: {
-                      label: "extraParams.servientrega.numDescuento",
-                      require: false,
+                    "tem:Num_Descuento": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numDescuento 0}}",
                     },
-                    Num_ValorDeclaradoSobreTotal: {
-                      label:
-                        "extraParams.servientrega.numValorDeclaradoSobreTotal",
-                      require: false,
+                    "tem:Num_ValorDeclaradoSobreTotal": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numValorDeclaradoSobreTotal 0}}",
                     },
-                    Des_DepartamentoDestino: {
-                      label: "extraParams.servientrega.desDepartamentoDestino",
-                      require: true,
+                    "tem:Des_DepartamentoDestino": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desDepartamentoDestino '?'}}",
                     },
-                    Des_DiceContener: {
-                      label: "extraParams.servientrega.desDiceContener",
-                      require: true,
+                    "tem:Des_DiceContener": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desDiceContener 'VARIOS PAPELES'}}",
                     },
-                    Ide_Num_Identific_Dest: {
-                      label: "extraParams.servientrega.ideNumIdentificDest",
-                      require: true,
+                    "tem:Ide_Num_Identific_Dest": {
                       "#text":
                         "{{safeVal extraParams.servientrega.ideNumIdentificDest 1000100530100}}",
                     },
-                    Num_Celular: {
-                      label: "extraParams.servientrega.numCelular",
-                      require: true,
+                    "tem:Num_Celular": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numCelular '?'}}",
                     },
-                    Des_DepartamentoOrigen: {
-                      label: "extraParams.servientrega.desDepartamentoOrigen",
-                      require: false,
+                    "tem:Des_DepartamentoOrigen": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desDepartamentoOrigen '?'}}",
                     },
-                    Num_IdentiRemitente: {
-                      label: "extraParams.servientrega.numIdentiRemitente",
-                      require: false,
+                    "tem:Num_IdentiRemitente": {
                       "#text":
                         "{{safeVal extraParams.servientrega.numIdentiRemitente '?'}}",
                     },
-                    Est_CanalMayorista: {
-                      label: "extraParams.servientrega.estCanalMayorista",
-                      require: false,
+                    "tem:Est_CanalMayorista": {
                       "#text":
                         "{{safeVal extraParams.servientrega.estCanalMayorista false}}",
                     },
-                    Nom_RemitenteCanal: {
-                      label: "extraParams.servientrega.nomRemitenteCanal",
-                      require: false,
+                    "tem:Nom_RemitenteCanal": {
                       "#text":
                         "{{safeVal extraParams.servientrega.nomRemitenteCanal '?'}}",
                     },
-                    Des_IdArchivoOrigen: {
-                      label: "extraParams.servientrega.desIdArchivoOrigen",
-                      require: false,
+                    "tem:Des_IdArchivoOrigen": {
                       "#text":
                         "{{safeVal extraParams.servientrega.desIdArchivoOrigen 1000100530100}}",
                     },
-                    objEnviosUnidadEmpaqueCargue: {},
+                    "tem:objEnviosUnidadEmpaqueCargue": {
+                      "#text:": "packagesXML packages resources 'SERVIENTREGA'",
+                    },
                   },
                 },
               },
